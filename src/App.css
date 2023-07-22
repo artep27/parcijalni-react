@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 90vw;
+  max-width: 1120px;
+  margin: 5rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px #777;
+}
+
+.form {
+  width: 50vw;
+}
+
+.form form {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+}
+
+.form input {
+  border: 1px solid aquamarine;
+  padding: 0.5rem;
+  background-color: aquamarine;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  padding: 0.5rem;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+
+.form button:hover {
+  background-color: white;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.userTop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user h2,
+p {
+  width: 100%;
+  margin: 0.5rem 1rem;
+}
+
+.user img {
+  width: 150px;
+}
+
+.repos {
+  width: 100%;
+}
+
+.repos h2 {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.repos ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem auto;
+}
+
+.repos li {
+  padding: 0.5rem;
+  border: 1px solid #777;
+  border-radius: 2px;
+}
+
+.btn-repos,
+.back {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin: 0.5rem 0;
+}
+
+.btn-repos:hover,
+.back:hover {
+  background-color: white;
+  color: black;
+}
+
+.error {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.error h2 {
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 700px) {
+  .form {
+    width: 90vw;
+  }
+
+  .form form {
+    width: 100%;
+  }
+
+  .user {
+    padding: 0;
+  }
+
+  .user img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main {
+    padding: 1rem;
+  }
+
+  .form {
+    width: 100vw;
+  }
+  .form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+
+  .userTop {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .userTop h2 {
+    text-align: center;
+  }
+}
